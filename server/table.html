@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>The HTML5 Herald</title>
+      <meta name="description" content="The HTML5 Herald">
+      <meta name="author" content="SitePoint">
+      <link rel="stylesheet" href="styles.css?v=1.0">
+      <div class="container">
+      <div class="row">
+      <section class="content">
+      <div class="row">
+         <h1><img src="https://s3.amazonaws.com/uploads.hipchat.com/28219/3948212/5fmjaKWg2GpnXkR/ede_logo.png" alt="Mountain View" style="width:50px;height:65px;">  Incidents Dashboard</h1>
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+      <div class="panel panel-default">
+      <div class="panel-body">
+      <div class = "pull-left">
+         <h1 id="category">Total</h1>
+      </div>
+      <div class="pull-right">
+         <div class="btn-group">
+            <button type="button" class="btn btn-success btn-filter" data-target="Y">Confirmed</button>
+            <button type="button" class="btn btn-warning btn-filter" data-target="N">Unconfirmed</button>
+            <button type="button" class="btn btn-default btn-filter" data-target="All">Total</button>
+         </div>
+      </div>
+      <div class="table-container" id = "#{INCDNT_KEY}_ta">
+         <table class="table table-filter">
+            <tbody>
+               <tr  data-status="#{INCDNT_STATUS}" id = "#{INCDNT_KEY}_tr"  >
+                  <td>
+                     <div class="media">
+                        <a href="#" class="pull-left">
+                        <img src="https://s3.amazonaws.com/uploads.hipchat.com/28219/3948212/5fmjaKWg2GpnXkR/ede_logo.png" class="media-photo">
+                        </a>
+                        <div class="media-body">
+                           <span class="media-meta pull-right hori-margin">#{INCDNT_KEY}</span>                                                       
+                           <h4 class="title pull-right pagado">#{PRODUCT_LN_NAME}</h4>
+                           <h4 class="title">
+                              #{REPORT_USER}
+                              <span class = "hori-margin ">#{INCDNT_REPORTING_DATE}</span>
+                              <!--<span class="pull-right pagado">(Confirmed)</span>-->
+                           </h4>
+                           <div>
+                              <label >#{REPORT_ORG}</label>
+                              <div class="pull-right">
+                                 <label>#{INCDNT_TYPE}</label>
+                              </div>
+                           </div>
+                           <div>
+                              <p1 class="pull-right">#{SITE_NAME}</p1>
+                              <p1>#{INCDNT_START_DATE} - #{INCDNT_END_DATE}</p1>
+                           </div>
+                           <div class="panel panel-default">
+                              <label>Description:</label>
+                              <div style="height: 90px;">
+                                 <p class="summary" >#{INCDNT_DESCRIPTION}</p>
+                              </div>
+                           </div>
+                           <button type="button" class="btn btn-success submit_ac pull-right" id="#{INCDNT_KEY}" style="display: none">Confirm</button>
+                           <button type="button" class="btn btn-success remove_ac pull-right" id="#{INCDNT_KEY}" style="display: none">Unconfirm</button>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </head>
+   <body>
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+         $('.star').on('click', function () {
+          $(this).toggleClass('star-checked');
+         });
+         
+         // $('.ckbox label').on('click', function () {
+         //     console.log("The toggClass is activated");
+         //   $(this).parents('tr').toggleClass('selected');
+         // });
+         
+         $('.btn-filter').on('click', function () {
+          //update the title name
+          $("#category").text($(this).text());
+          var $target = $(this).data('target');
+          
+          //hide all tr first and then display upon category
+          $('.table tr').css('display', 'none');
+          if ($target != 'All') {
+            //check if the submit button is necessary
+            if($target == 'Y'){
+              $('.confirmed').fadeIn('slow');
+              $('.remove_ac').css('display', 'initial')
+              $('.submit_ac').css('display','none');  
+            }else if($target == 'N'){
+              $('.unconfirmed').fadeIn('slow');
+              $('.submit_ac').css('display','initial'); 
+              $('.remove_ac').css('display','none');
+            }
+            $('.table tr[data-status="' + $target + '"]').fadeIn('slow');
+          } else {
+            $('.submit_ac').css('display','none');
+            $('.remove_ac').css('display','none');
+            $('.table-container').fadeIn('slow');
+            $('.table tr').fadeIn('slow');
+          }
+         });
+         
+         $(function() {
+            $( ".remove_ac" ).click(function (){
+                
+               Cyclotron.ede_incidents.identifier = ($(this).attr('id'));
+               
+               //disable the confirm button
+               $(this).prop("disabled",true);
+               
+               //further function to hide the row form the table
+               $("#"+ Cyclotron.ede_incidents.identifier+"_ta").fadeOut();
+               $("#"+ Cyclotron.ede_incidents.identifier+"_ta" ).addClass( "unconfirmed" );
+               
+               
+         
+               //trigger the datasource SQL Call upon submission
+               //change the status value to Y from N
+               //migrate the whole row into the incident log table
+                $("#"+ Cyclotron.ede_incidents.identifier+"_tr").attr("data-status", "N");
+               Cyclotron.dataSources.ede_incidents_removal.execute(true);
+            });
+         });
+         
+         $(function() {
+            $( ".submit_ac" ).click(function (){
+                
+               Cyclotron.ede_incidents.identifier = ($(this).attr('id'));
+               
+               //disable the confirm button
+               $(this).prop("disabled",true);
+               
+               //further function to hide the row form the table
+               $("#"+ Cyclotron.ede_incidents.identifier+"_ta").fadeOut();
+               $("#"+ Cyclotron.ede_incidents.identifier+"_ta" ).addClass( "confirmed" );
+               
+               
+         
+               //trigger the datasource SQL Call upon submission
+               //change the status value to Y from N
+               //migrate the whole row into the incident log table
+                $("#"+ Cyclotron.ede_incidents.identifier+"_tr").attr("data-status", "Y");
+               Cyclotron.dataSources.ede_incidents_update.execute(true);
+            });
+         });
+      </script>
+      <!--   <script src="js/scripts.js"></script> -->
+   </body>
+</html>
+COPY TO CLIPBOARD	 SELECT ALL
+© FreeFormatter.com - FREEFORMATTER is a d/b/a of 10174785 Canada Inc. - Copyright Notice - Privacy Statement - Terms of Use
