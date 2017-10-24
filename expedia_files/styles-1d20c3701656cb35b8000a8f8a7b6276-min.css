@@ -1,0 +1,274 @@
+.select select.vtest-focus,.select select:focus,.select.invalid select:focus,.text input:focus,.text input:focus+.icon,.text textarea.vtest-focus,.text textarea:focus,.text textarea:focus+.icon,.text.focused input,.text.focused input+.icon,.text.focused.invalid input:focus+.icon,.text.invalid input:focus,.text.invalid textarea:focus,.text.invalid textarea:focus+.icon{box-shadow:0 0 0 2px #0087f5;border-color:#0087f5}
+.hero-banner-inner{padding-top:1.41176471em}
+.hero-banner-box .hero-banner-title{display:none}
+.hero-banner-box h1{font-size:1.17647059em}
+.hero-banner-box h1{line-height:1.35}
+.wizard-tabs .tabs{padding-top:.35294118em}
+.wizard-tabs .tabs .tab-label .icon{display:inline;font-size:1em}
+.wizard-tabs .tabs .tab>button{background-color:#616161;background-color:rgba(97,97,97,0.54)}
+.wizard-tabs .tabs .tab>button:hover{background:#0087f5}
+.wizard-tabs .tabs .tab>button.on{background:#0065b8}
+.wizard-tabs .alert{margin-top:.70588235em}
+.wizard-tabs .label,.wizard-tabs .inline-label{color:#c7c7c7;white-space:nowrap}
+.wizard-tabs .tabs-container{width:100%;max-width:50em}
+.wizard-tabs .tab-pane{padding-bottom:0}
+.wizard-tabs .toggle-trigger,.wizard-tabs .gcw-add-fields,.wizard-tabs .gcw-remove-fields{color:#ededed}
+.wizard-tabs .toggle-trigger:focus,.wizard-tabs .gcw-add-fields:focus,.wizard-tabs .gcw-remove-fields:focus{color:#ededed}
+.wizard-tabs .toggle-trigger:hover,.wizard-tabs .gcw-add-fields:hover,.wizard-tabs .gcw-remove-fields:hover{color:#fff}
+.wizard-tabs .check input:checked+.inline-label,.wizard-tabs .check input+.inline-label{color:#fff}
+.wizard-tabs .mobile-hero-banner-title{display:none}
+.wizard-tabs .gcw-submit{margin-top:1.05882353em;margin-bottom:1.05882353em}
+.wizard-tabs .icon-packages-double:after{content:"\e01f  \e00d"}
+.wizard-tabs .icon-packages-double-fc:after{content:"\e01f  \e013"}
+.wizard-tabs .icon-packages-double-fhc:after{content:"\e01f  \e00d  \e013"}
+.wizard-tabs .icon-packages-double-hf:after{content:"\e00d  \e01f"}
+.wizard-tabs .icon-packages-double-hfc:after{content:"\e00d  \e01f  \e013"}
+.wizard-tabs .icon-packages-double-hc:after{content:"\e00d  \e013"}
+.wizard-tabs .icon-packages-double-ch:after{content:"\e013  \e00d"}
+.wizard-tabs .icon-packages-double-chf:after{content:"\e013  \e00d  \e01f"}
+.wizard-tabs .icon-packages-double-cf:after{content:"\e013  \e01f"}
+.wizard-tabs .icon-palm-tree:after{content:"";background:url('https://images.trvl-media.com/media/content/expca/graphics/icons/PalmTree_v2.png') transparent no-repeat;background-size:contain;height:28px;width:28px;position:relative;margin:-4px;bottom:-3px}
+.wizard-tabs .icon-remove-rail{margin-top:1.05882353em}
+.wizard-tabs .icon-remove-rail:after{content:"\e022";left:8px;top:6px}
+.wizard-tabs .icon-remove-multi-flight{margin-top:1.70588235em;margin-left:.47058824em;font-size:1.1764705882352942em}
+.wizard-tabs .icon-remove-multi-flight:after{content:"\e022";left:8px;top:6px}
+.wizard-tabs input,.wizard-tabs select{font-size:.9411764705882353em}
+.wizard-tabs .search-btn-col{margin-top:0}
+.wizard-tabs .search-btn-col .btn-primary{margin:1.05882353em 0}
+.wizard-tabs .package-val-prop{margin-top:1.41176471em;color:#fff;font-size:.9411764705882353em}
+.wizard-tabs .package-val-prop .fh strong{display:block}
+.wizard-tabs .package-val-prop .fc{padding-top:.76470588em}
+.wizard-tabs .package-val-prop .default-msg{width:18.76470588em}
+.wizard-tabs .package-val-prop .default-msg{font-size:.94117647em}
+.wizard-tabs .gcw-default-visible-msg{margin-top:0;top:1.05882353em}
+.wizard-tabs .trains-label-new{color:#ffcb00}
+.wizard-tabs .gcw-age-rules{padding-left:.94117647em;width:10.76470588em;white-space:nowrap;color:#ededed;font-size:.7647058823529411em;display:block;margin:1.29411765em 0 0;cursor:pointer}
+.wizard-tabs .gcw-age-rules:focus{color:#ededed}
+.wizard-tabs .gcw-age-rules:hover{color:#0087f5}
+.gcw-time-field{padding-left:0}
+.gcw-ticket-type-field{padding-left:0}
+.gcw-error-messages-wrapper{display:none}
+.gcw-guests-select{padding:0}
+.gcw-location-field,.gcw-destination-field,.gcw-departure-month-field{width:50%}
+.gcw-wide-location-field{width:100%}
+.gcw-date-field{width:25%;min-width:9.05882353em}
+.gcw-disabled{display:none}
+.gcw-package-wrapper{margin-top:.76470588em}
+.gcw-package-wrapper .gcw-package-container{color:#c7c7c7;background-color:#616161;background-color:rgba(97,97,97,0.54);-webkit-border-radius:.17647059em;-moz-border-radius:.17647059em;-o-border-radius:.17647059em;border-radius:.17647059em;padding:.35294118em .70588235em 1.05882353em .70588235em}
+.gcw-package-wrapper .gcw-package-container .gcw-location-field{padding:0}
+.gcw-package-wrapper .gcw-package-container .flights.room-data{width:100%}
+.gcw-rooms-container .room-data:first-child{margin-top:0}
+.gcw-rooms-container .room-data:first-child .roomlabel{display:none}
+.gcw-rooms-container.clearBoth{clear:both}
+.gcw-rooms-container.clearBoth .roomlabel{display:inline-block !important}
+.gcw-advanced-options,.gcw-advanced-options-wrapper{margin-top:.70588235em;margin-bottom:0}
+.gcw-advanced-options .gcw-adv-options,.gcw-advanced-options-wrapper .gcw-adv-options{margin-bottom:.35294118em}
+.gcw-young-child-note{padding-top:0}
+.gcw-young-child-note .gcw-young-child-legend{color:#fff;padding-left:0;padding-right:1.05882353em}
+.gcw-young-child-note .check span.inline-label{color:#c7c7c7;font-weight:bold;padding-left:.70588235em}
+.gcw-young-child-note fieldset{margin-bottom:0}
+.gcw-young-child-note fieldset>span{display:inline-block}
+.gcw-packages-partial-stay-parent{margin-left:.70588235em}
+.gcw-packages-partial-stay{margin-top:.70588235em}
+.gcw-driver-age{top:.08823529em}
+.gcw-driver-age-num{width:15%;min-width:4.41176471em}
+.gcw-driver-age-num label{width:100%}
+.gcw-railcard-label{margin-bottom:-0.70588235em}
+.gcw-ground-transfer-wrapper .gcw-time-field .gcw-search-type-field{margin-top:0}
+.driver-age{padding:.82352941em 0 0 .70588235em;position:relative;zoom:1}
+.driver-age-info-icon{font-size:.7647058823529411em;padding-left:.17647059em}
+.driver-age-label{width:100% !important}
+.driver-age-col{width:8.333333333333334%;padding-top:.23529412em}
+.driver-age-package-wrapper{padding-left:0}
+.driver-age-tooltip{color:white !important;position:relative;bottom:.29411765em;right:.52941176em}
+.room-data{margin:0}
+.room-data .roomlabel{color:#fff;margin:.35294118em 0 0 0}
+.sub-sub-nav-select{padding-top:.70588235em}
+.gcw-sub-option{padding-left:.35294118em}
+.wizard-tabs .search-btn-col .btn-primary.gcw-submit.ab14933{margin-top:-0.88235294em}
+.sub-nav-select{background-color:rgba(107,107,107,0.54);-webkit-border-radius:.29411765em;-moz-border-radius:.29411765em;-o-border-radius:.29411765em;border-radius:.29411765em;display:inline-block;position:relative;margin-top:.70588235em;margin-bottom:-0.35294118em}
+.sub-nav-select label{margin:0;padding:0}
+.sub-nav-select input[type="radio"]{position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}
+.sub-nav-select input[type="radio"]:focus ~ span{outline:1px solid #0087f5}
+.sub-nav-select input[type="radio"]:checked ~ span{background-color:#0065b8}
+.sub-nav-select .inline-label{margin:0;padding:.70588235em;border-radius:.266667em;color:#fff;font-weight:400;font-size:.7647058823529411em}
+.gcw-section-cruises-tab label{width:50%}
+.gcw-section-cruises-tab .gcw-date-field label{width:100%}
+.gcw-section-cruises-tab .gcw-age-field{width:100%;display:inline-block;padding-bottom:.64705882em}
+.gcw-section-cruises-tab .gcw-cruise-travelersLabel{padding-left:1.76470588em;padding-top:.94117647em}
+.gcw-section-cruises-tab .select.gcw-age-field{width:100%}
+.gcw-section-cruises-tab .gcw-traveller-field,.gcw-section-cruises-tab .gcw-child-field{width:13%;margin-bottom:.29411765em}
+.gcw-section-cruises-tab .wizard-tabs .search-btn-col .btn-primary.gcw-submit.ab14933{margin-top:-0.88235294em}
+.gcw-section-open-search-tab .gcw-opensearch{width:100%}
+.gcw-section-cars-tab .gcw-search-type-field{margin-top:1.76470588em}
+.gcw-section-cars-tab .gcw-show-adv-options{display:inline-block;margin-top:1.29411765em}
+.gcw-section-cars-tab .gcw-car-vendor-field select option:disabled{display:none}
+.gcw-section-cars-tab .gcw-equipment-options{margin:0}
+.gcw-section-cars-tab .gcw-equipment-options legend{color:#fff;margin:.35294118em 0 .35294118em}
+.gcw-section-cars-tab .gcw-equipment-options ul{margin:0}
+.gcw-section-cars-tab .gcw-equipment-options ul li{padding-bottom:0}
+.gcw-section-cars-tab .gcw-car-type-check-field span{padding-left:1.64705882em;color:#c7c7c7;font-weight:bold}
+.gcw-search-type-field.gt-time.gt-pickup-time{margin-top:.70588235em}
+.gcw-search-type-field.gt-time.gt-dropoff-time{margin-top:.70588235em}
+.gcw-section-flights-tab .gcw-date-field{width:25%}
+.gcw-section-flights-tab .gcw-age-rules{padding-left:.94117647em;width:10.76470588em;white-space:nowrap;color:#ededed;font-size:.7647058823529411em;display:block;margin:1.29411765em 0 0;cursor:pointer}
+.gcw-section-flights-tab .gcw-age-rules:focus{color:#ededed}
+.gcw-section-flights-tab .gcw-age-rules:hover{color:#0087f5}
+.gcw-section-flights-tab .gcw-flights-add-hotel,.gcw-section-flights-tab .gcw-flights-add-car{margin-top:.70588235em}
+.gcw-section-flights-tab .gcw-flights-add-hotel input,.gcw-section-flights-tab .gcw-flights-add-car input{top:.23529412em;position:relative}
+.gcw-section-flights-tab .gcw-flights-add-hotel .inline-label,.gcw-section-flights-tab .gcw-flights-add-car .inline-label{color:#ededed;padding-left:0;font-size:.8823529411764706em;font-weight:bold}
+.gcw-section-flights-tab .gcw-multidest-flights-container legend{color:#fff}
+.gcw-section-flights-tab .gcw-multidest-flights-container hr.default{color:red;color:#4c4c4c;border-color:#4c4c4c;margin:1.05882353em 0 .35294118em}
+.gcw-section-flights-tab .gcw-multidest-flights-container .gcw-multidest-date-field{width:25%}
+.gcw-section-flights-tab .gcw-rooms-container{float:left}
+.gcw-section-flights-tab .gcw-package-wrapper .gcw-package-container{padding-left:0}
+.gcw-section-flights-tab .gcw-advanced-options .inline-label{font-weight:bold}
+.gcw-section-flights-tab .gcw-car-package-container{background-color:rgba(107,107,107,0.54);position:relative;-webkit-border-radius:.17647059em;-moz-border-radius:.17647059em;-o-border-radius:.17647059em;border-radius:.17647059em;padding:0 1.41176471em 1.05882353em;margin-top:.76470588em}
+.gcw-section-flights-tab .sub-nav-select.disable{cursor:not-allowed}
+.gcw-section-flights-tab .sub-nav-select .check.disable{opacity:.72;pointer-events:none}
+.gcw-section-flights-tab .sub-nav-select .check.disable>input{pointer-events:none}
+.gcw-section-flights-tab .sub-nav-select .check.disable>.inline-label{pointer-events:none}
+.gcw-section-flights-tab .sub-nav-select .flight-helper{padding-left:0;margin-right:.35294118em}
+.gcw-section-flights-tab .sub-nav-select .flight-helper .icon.icon-help{position:relative;top:.23529412em;color:#fff}
+.gcw-section-hotels-tab .gcw-hotel-add-flight,.gcw-section-hotels-tab .gcw-hotel-add-car{margin-top:1.05882353em}
+.gcw-section-hotels-tab .gcw-hotel-add-flight input,.gcw-section-hotels-tab .gcw-hotel-add-car input{top:.23529412em;position:relative}
+.gcw-section-hotels-tab .gcw-hotel-add-flight .inline-label,.gcw-section-hotels-tab .gcw-hotel-add-car .inline-label{color:#ededed;padding-left:0;font-size:.8823529411764706em;font-weight:bold}
+.gcw-section-hotels-tab .gcw-total-rooms-group{clear:none}
+.gcw-section-hotels-tab .gcw-total-rooms-group .room-data .roomlabel{display:none !important}
+.gcw-section-hotels-tab .gcw-package-wrapper .gcw-age-rules{padding-left:.94117647em;width:10.76470588em;white-space:nowrap;color:#ededed;font-size:.7647058823529411em;display:block;margin:1.29411765em 0 0;cursor:pointer}
+.gcw-section-hotels-tab .gcw-package-wrapper .gcw-age-rules:focus{color:#ededed}
+.gcw-section-hotels-tab .gcw-package-wrapper .gcw-age-rules:hover{color:#0087f5}
+.gcw-section-hotels-tab .gcw-package-wrapper .gcw-package-container .gcw-young-child-note{padding-left:.70588235em}
+.gcw-section-hotels-tab .gcw-package-wrapper .add-links{font-size:.8823529411764706em}
+.gcw-section-hotels-tab .gcw-package-wrapper .add-links .disabled{color:#757575}
+.gcw-section-hotels-tab .gcw-package-wrapper .add-links .help-container{float:left;position:relative;margin-left:12px}
+.gcw-section-hotels-tab .gcw-package-wrapper .add-links .help-container a{color:#757575}
+.gcw-section-hotels-tab .gcw-location-field{width:100%}
+.gcw-section-packages-tab .gcw-age-rules{padding-left:1.17647059em;width:10.76470588em;white-space:nowrap;color:#ededed;font-size:.7647058823529411em;display:block;margin:1.29411765em 0 0;cursor:pointer}
+.gcw-section-packages-tab .gcw-age-rules:focus{color:#ededed}
+.gcw-section-packages-tab .gcw-age-rules:hover{color:#0087f5}
+.gcw-section-packages-tab .gcw-package-car-message{margin-top:.70588235em;margin-bottom:.35294118em;white-space:normal}
+.gcw-section-packages-tab .gcw-fc-room-data{float:left;padding-left:.70588235em;clear:none}
+.gcw-section-packages-tab .gcw-fc-children-container{clear:both}
+.gcw-section-packages-tab .gcw-rooms-container>fieldset{margin-bottom:0}
+.gcw-section-packages-tab .gcw-packages-partial-stay .inline-label{font-weight:bold;white-space:normal}
+.gcw-section-packages-tab .gcw-package-direct-flight .inline-label{font-weight:bold}
+.gcw-section-threepp-tab .gcw-lc-filter{padding-top:2.11764706em;margin-left:1.41176471em}
+.gcw-section-threepp-tab .gcw-age-rules,.gcw-section-threepp-tab .gcw-link{padding-left:.94117647em;width:10.76470588em;white-space:nowrap;font-size:.7647058823529411em;display:block;margin:1.29411765em 0 0;cursor:pointer;color:#ededed}
+.gcw-section-threepp-tab .gcw-age-rules:focus,.gcw-section-threepp-tab .gcw-link:focus{color:#ededed}
+.gcw-section-threepp-tab .gcw-age-rules:hover,.gcw-section-threepp-tab .gcw-link:hover{color:#0087f5}
+.gcw-section-threepp-tab .gcw-threepp-advanced-options{margin:0;padding:0}
+.gcw-section-threepp-tab .gcw-threepp-advanced-options legend{color:#fff;margin:0}
+.gcw-section-threepp-tab .gcw-threepp-advanced-options ul{margin:0}
+.gcw-section-threepp-tab .gcw-threepp-advanced-options ul li{padding-bottom:0}
+.gcw-section-threepp-tab .gcw-threepp-type-check-field span{padding-left:1.64705882em;color:#c7c7c7;font-weight:bold}
+@media only screen and (min-width:60em){.theme-inverse-pills .tabs-wrapper{overflow:hidden;width:100%}
+.theme-inverse-pills .tabs{width:auto}
+.theme-inverse-pills .tab,.theme-inverse-pills .tabs>li{float:left;margin-right:.35294118em;min-width:4.58823529em;text-align:center}
+.theme-inverse-pills .tabs a .icon,.theme-inverse-pills .tabs button .icon{display:block;padding:0;font-size:1.4615384615384615em;text-align:center}
+.theme-inverse-pills .tabs a,.theme-inverse-pills .tabs button{text-align:center;font-size:.7647058823529411em;padding:.46153846em;background-color:#616161}
+}
+@media only screen and (max-width:45.375em){.gcw-section-cars-tab .gcw-date-field{width:58.333333333333336%}
+.gcw-groundtransfer-wrapper .gcw-location-field{width:100%}
+.gcw-groundtransfer-wrapper .gcw-date-field{width:41.66666666666667%}
+.gcw-groundtransfer-wrapper .gcw-time-field{width:41.66666666666667%}
+}
+@media only screen and (max-width:30.6875em){.gcw-location-field{width:50%}
+.gcw-mid-location-field{width:66.66666666666667%}
+.gcw-wide-location-field,.gcw-advanced-options{width:100%}
+.gcw-date-field{width:50%}
+.gcw-rooms-field{width:100%}
+.gcw-child-field{width:33.333333333333336%}
+.gcw-submit{width:100%}
+.gcw-driver-age-num{width:50%}
+.gcw-date-time-field{width:33.333333333333336%}
+.gcw-section-flights-tab .gcw-clear-both{clear:both}
+.gcw-section-flights-tab .gcw-rooms-container{width:75%}
+.gcw-section-flights-tab .gcw-rooms-container.rooms-wrapping{width:100%}
+.gcw-section-flights-tab .gcw-rooms-container.guests-wrapping{width:100%}
+.gcw-section-flights-tab .gcw-rooms-field{width:25%;clear:both}
+.gcw-section-flights-tab .gcw-location-field,.gcw-section-flights-tab .gcw-multidest-location-field{width:100%}
+.gcw-section-flights-tab .gcw-multidest-date-field{width:50% !important}
+.gcw-section-flights-tab .gcw-traveller-field{min-width:4.70588235em}
+.gcw-section-flights-tab .gcw-child-field{width:41.66666666666667%}
+.gcw-section-flights-tab .gcw-flights-add-hotel .inline-label,.gcw-section-flights-tab .gcw-flights-add-car .inline-label{padding-left:.23529412em}
+.gcw-section-flights-tab .gcw-advanced-options{width:50%}
+.gcw-section-flights-tab .gcw-advanced-options .inline-label{padding-left:1.64705882em}
+.gcw-section-hotels-tab .gcw-location-field{width:100%}
+.gcw-section-hotels-tab .gcw-rooms-field{width:25%}
+.gcw-section-hotels-tab .gcw-rooms-container{width:75%}
+.gcw-section-hotels-tab .gcw-rooms-container.rooms-wrapping{width:100%}
+.gcw-section-hotels-tab .gcw-rooms-container.guests-wrapping{width:100%}
+.gcw-section-hotels-tab .gcw-traveller-field{min-width:4.70588235em}
+.gcw-section-hotels-tab .gcw-child-field{width:41.66666666666667%}
+.gcw-section-hotels-tab .gcw-hotels-add-flight .inline-label,.gcw-section-hotels-tab .gcw-hotels-add-car .inline-label{padding-left:.23529412em}
+.gcw-section-packages-tab .gcw-location-field{width:100%}
+.gcw-section-packages-tab .gcw-fc-room-data,.gcw-section-packages-tab .gcw-fc-children-container{width:100%}
+.gcw-section-packages-tab .gcw-rooms-container{width:75%}
+.gcw-section-packages-tab .gcw-rooms-container.rooms-wrapping{width:100%}
+.gcw-section-packages-tab .gcw-rooms-container.guests-wrapping{width:100%}
+.gcw-section-packages-tab .gcw-rooms-field{width:25%}
+.gcw-section-packages-tab .gcw-traveller-field{min-width:4.70588235em}
+.gcw-section-packages-tab .gcw-child-field,.gcw-section-packages-tab .gcw-fc-child-field{width:41.66666666666667%}
+.gcw-section-cars-tab .gcw-location-field,.gcw-section-cars-tab .gcw-car-type-field,.gcw-section-cars-tab .gcw-car-vendor-field,.gcw-section-cars-tab .gcw-car-discount-code-field,.gcw-section-cars-tab .gcw-discount-code-input{width:100%}
+.gcw-section-cars-tab .gcw-date-field{width:58.333333333333336%}
+.gcw-section-rails-tab .gcw-location-field{width:100%}
+.gcw-section-rails-tab .gcw-date-field{width:66.66666666666667%}
+.gcw-section-rails-tab .gcw-traveller-field{width:33.333333333333336%}
+.gcw-section-rails-tab .gcw-search-by{width:41.66666666666667%}
+.gcw-section-rails-tab .gcw-railcard-type{width:58.333333333333336%}
+.gcw-section-cruises-tab label{width:100%}
+.gcw-section-cruises-tab .gcw-traveller-field,.gcw-section-cruises-tab .gcw-child-field{width:35%}
+.wizard-hero .hero-banner-box{background-color:#000 !important;background-color:#000 !important;color:#c7c7c7 !important}
+.wizard-hero .theme-inverse-pills .tabs button{border-color:#1f1f1f !important;background-color:#404040 !important}
+.wizard-hero .hero-banner-wrap .theme-inverse-pills .tabs a,.hero-banner-wrap .theme-inverse-pills .tabs button{color:#fff}
+.wizard-hero .mobile-hero-banner-title{display:block;color:#fff;margin:0}
+.wizard-hero .tab-pane{padding-left:.70588235em;padding-right:.70588235em}
+.sub-nav-select{background-color:transparent;margin-top:.64705882em}
+.sub-nav-select label{margin:.35294118em .23529412em 0 0}
+.sub-nav-select span{background-color:#616161;background-color:rgba(97,97,97,0.54);padding:.52941176em .82352941em}
+.search-btn-col{width:100%}
+.wizard-tabs .tabs{padding-top:0}
+.wizard-tabs .tabs .tab>button:active,.wizard-tabs .tabs .tab>button:hover,.wizard-tabs .tabs .tab>button:focus{background-color:#0087f5 !important;color:#fff !important}
+.wizard-tabs .tabs .tab button.on{background-color:#0065b8 !important}
+.wizard-tabs .tabs .tab #tab-rail-tab{padding:.17647059em .35294118em;font-size:.5882352941176471em}
+.wizard-tabs .tabs .tab #tab-rail-tab .icon-train{text-align:center;margin:0 auto}
+.wizard-tabs .tabs .tab #tab-rail-tab .tab-label{border:0;clip:rect(0,0,0,0);height:1px;margin:0 auto;overflow:hidden;padding:0;position:static !important;width:1px;text-align:center}
+.wizard-tabs .tabs .tab #tab-rail-tab .tab-label .trains-label-new{position:relative;top:.05882353em}
+.wizard-tabs .tabs .tab #tab-rail-tab .tab-label .trains-label{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute !important;width:1px}
+.wizard-tabs .package-val-prop{margin-top:0;padding-bottom:4px}
+.wizard-tabs .package-val-prop .fh{margin-top:0}
+.wizard-tabs .gcw-default-visible-msg{margin-bottom:.88235294em;top:0}
+.gcw-groundtransfer-wrapper .gcw-location-field{width:100%}
+.gcw-groundtransfer-wrapper .gcw-date-field{width:41.66666666666667%}
+.gcw-groundtransfer-wrapper .gcw-time-field{width:41.66666666666667%}
+}
+@media only screen and (max-width:425px){.wizard-tabs .tab:nth-child(8),.wizard-tabs .tab:nth-child(9){display:none}
+.gcw-disabled-mobile-425{display:none !important}
+}
+@media(max-width:626px){.gcw-groundtransfer-wrapper .gcw-location-field{width:100%}
+.gcw-groundtransfer-wrapper .gcw-date-time-field{width:50%}
+.gcw-groundtransfer-wrapper .gcw-time-field{width:50%}
+}
+@media(max-width:500px){.gcw-groundtransfer-wrapper .gcw-ticket-type-field .gcw-traveller-field{width:auto}
+}
+@media only screen and (max-width:350px){.wizard-tabs .tab:nth-child(7){display:none}
+.gcw-disabled-mobile-350{display:none !important}
+}
+@media only screen and (min-width:30.75em) and (max-width:644px){.gcw-rooms-container{clear:both}
+}
+@media only screen and (max-width:567px){.gcw-section-flights-tab .gcw-clear-both{clear:both}
+}
+.opensearch-education{padding-bottom:12px}
+.opensearch-education .opensearch-education-title{color:#fff}
+.opensearch-education .opensearch-education-examples li{color:#fff;opacity:0;transition:all 1s}
+.opensearch-education .opensearch-education-examples li.opensearch-education-slideIn{opacity:1}
+.taap-wizard-higlight{display:inline;font-weight:bold;color:#ffcb00;margin:0}
+.taap-wizard-alt-checkbox-container{padding:0 .70588235em .23529412em .35294118em;border-radius:.26666667em;background:#fff;border-bottom:1px solid #c7c7c7;position:relative}
+.taap-wizard-alt-checkbox-container{margin-top:0}
+@media only screen and (max-width:45.3125em){.taap-wizard-alt-checkbox-container{display:block;margin-left:.70588235em;margin-top:.35294118em}
+}
+.taap-wizard-alt-higlight{display:inline;font-weight:bold;color:#2f7000;margin:0}
+.taap-wizard-alt-inline-label{display:inline;margin:0;color:#000;background:#fff;font-weight:normal;font-size:.8823529411764706em;white-space:normal}
+.taap-package-rates-note{color:#f5f5f5;font-size:15px;background-color:#616161;background-color:rgba(97,97,97,0.54);-webkit-border-radius:.17647059em;-moz-border-radius:.17647059em;-o-border-radius:.17647059em;border-radius:.17647059em;padding:.35294118em .70588235em 1.05882353em .70588235em}
+.taap-package-rates-grey-area{padding-top:.70588235em;padding-bottom:.70588235em;padding-left:.35294118em;padding-right:.35294118em;margin-bottom:.35294118em}

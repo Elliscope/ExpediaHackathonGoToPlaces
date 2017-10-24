@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://tpc.googlesyndication.com/safeframe/1-0-13/html/container.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>SafeFrame Container</title>
+  </head>
+  <body marginwidth="0" marginheight="0">
+    <script>
+(function(){var b=this;var f=String.prototype.trim?function(a){return a.trim()}:function(a){return a.replace(/^[\s\xa0]+|[\s\xa0]+$/g,"")},g=function(a,c){return a<c?-1:a>c?1:0};var k;a:{var l=b.navigator;if(l){var m=l.userAgent;if(m){k=m;break a}}k=""};var ba=function(a,c){var h=aa;return Object.prototype.hasOwnProperty.call(h,a)?h[a]:h[a]=c(a)};var ca=-1!=k.indexOf("Opera"),n=-1!=k.indexOf("Trident")||-1!=k.indexOf("MSIE"),da=-1!=k.indexOf("Edge"),p=-1!=k.indexOf("Gecko")&&!(-1!=k.toLowerCase().indexOf("webkit")&&-1==k.indexOf("Edge"))&&!(-1!=k.indexOf("Trident")||-1!=k.indexOf("MSIE"))&&-1==k.indexOf("Edge"),q=-1!=k.toLowerCase().indexOf("webkit")&&-1==k.indexOf("Edge"),t=function(){var a=b.document;return a?a.documentMode:void 0},u;a:{var v="",w=function(){var a=k;if(p)return/rv\:([^\);]+)(\)|;)/.exec(a);if(da)return/Edge\/([\d\.]+)/.exec(a);if(n)return/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a);if(q)return/WebKit\/(\S+)/.exec(a);if(ca)return/(?:Version)[ \/]?(\S+)/.exec(a)}();w&&(v=w?w[1]:"");if(n){var x=t();if(null!=x&&x>parseFloat(v)){u=String(x);break a}}u=v}var y=u,aa={},z=function(a){return ba(a,function(){for(var c=0,h=f(String(y)).split("."),S=f(String(a)).split("."),fa=Math.max(h.length,S.length),r=0;0==c&&r<fa;r++){var d=h[r]||"",e=S[r]||"";do{d=/(\d*)(\D*)(.*)/.exec(d)||["","","",""];e=/(\d*)(\D*)(.*)/.exec(e)||["","","",""];if(0==d[0].length&&0==e[0].length)break;c=g(0==d[1].length?0:parseInt(d[1],10),0==e[1].length?0:parseInt(e[1],10))||g(0==d[2].length,0==e[2].length)||g(d[2],e[2]);d=d[3];e=e[3]}while(0==c)}return 0<=c})},A;var B=b.document;A=B&&n?t()||("CSS1Compat"==B.compatMode?parseInt(y,10):5):void 0;var C;if(!(C=!p&&!n)){var D;if(D=n)D=9<=Number(A);C=D}C||p&&z("1.9.1");n&&z("9");var E=p||q||n&&z(11);var ea=/^([^;]+);(\d+);([\s\S]*)$/;try{var F=ea.exec(window.name);if(null===F)throw Error("Cannot parse serialized data");var G=+F[2],H=F[3];if(G>H.length)throw Error("Cannot parse serialized data");var I={b:F[1],content:H.substr(0,G),a:H.substr(G)},J;var K=window.location.hash;if(K){var L=K.match(/[&#]eid=([\d,]+)/);J=L?L[1].split(","):[]}else J=[];var M=J;M.indexOf&&0<=M.indexOf("21060230")||!E||(window.name="");var N=JSON.parse(I.a);N.goog_safeframe_hlt&&(b.goog_safeframe_hlt=N.goog_safeframe_hlt);N._context&&(b.AMP_CONTEXT_DATA=N._context);b.sf_={v:I.b,exp:M,cfg:N};var O=I.content,P=window;if(E){var Q=P.document;Q.open("text/html","replace");Q.write(O);Q.close()}else{var R=O,T;if(T=n&&z(7)&&!z(10)){var U=navigator.userAgent.match(/Trident\/([0-9]+.[0-9]+)/);T=6>(U?parseFloat(U[1]):0)}var V;if(V=T)a:{for(var W=0;W<R.length;++W)if(127<R.charCodeAt(W)){V=!0;break a}V=!1}if(V){for(var X=unescape(encodeURIComponent(R)),ha=Math.floor(X.length/2),Y=[],Z=0;Z<ha;++Z)Y[Z]=String.fromCharCode(256*X.charCodeAt(2*Z+1)+X.charCodeAt(2*Z));1==X.length%2&&(Y[ha]=X.charAt(X.length-1));R=Y.join("")}P.goog_content=R;P.location.replace("javascript:window.goog_content")}}catch(a){};}).call(this);
+    </script>
+
+<script>
+var adMetrics={adconfig:{orderId:"2100458079",lineItemId:"4354414476",creativeId:"138204938456",adUnitId:"21611879958",activity:"",adlp:"",b:"",bk:"",cc:"Visa",cmptst:"",d:"",dta:"",eapid:"",email:"",ete:"",ets:"",ff:"",ip:"",kid:"0",mc1:"3e32302668284e4e8cfdbc1470bd992c",numadults:"",o:"IAH,HFE,LAX,SEA",p:"",pd:"BJS,SEA,BHB",pn:"",regionid:"160542,561",sb:"",ssl:"",td:"",tst:"",custtype:"",pref:"",sr:"0",ac:"econ",cd:"",width:"368",height:"301"},name:"/23171577/expedia.us_en/home/all/NT3",startTime:new Date()},markName="orderID="+adMetrics.adconfig.orderId+" lineItemID="+adMetrics.adconfig.lineItemId+" adUnitID="+adMetrics.adconfig.adUnitId+" creativeID="+adMetrics.adconfig.creativeId+" fully loaded";var getIndexExchangeCMCID=function(a){var d=function(){return NodeFilter.FILTER_ACCEPT};var g=[];try{var c=document.createNodeIterator(a,NodeFilter.SHOW_COMMENT,d,false);var b;while((b=c.nextNode())){var h=b.nodeValue;if(h.indexOf(" cmc ")>-1){g.push(b.nodeValue.trim().split(" ")[1])}}}catch(f){}return g};try{if(window&&window.performance&&typeof(window.performance.getEntriesByType)==="function"){var resourceList=window.performance.getEntriesByType("resource");if(resourceList){adMetrics.resourceList=JSON.stringify(resourceList)}}if(window&&window.addEventListener&&window.removeEventListener){var onLoadListener=function(){try{window.removeEventListener("load",onLoadListener);if(window&&window.top&&typeof(window.top.postMessage)==="function"){adMetrics.cmc=getIndexExchangeCMCID(document.body);if(typeof window.performance&&typeof window.performance.mark==="function"){window.performance.mark(markName);if(typeof window.performance.getEntriesByName==="function"){var a=window.performance.getEntriesByName(markName,"mark"),b;if(a&&a.length>0){b=a[0];if(b&&b.startTime){adMetrics.timeToLoadCreative=b.startTime}}}}window.top.postMessage(adMetrics,"*")}}catch(c){if(window&&window.top&&typeof(window.top.postMessage)==="function"){adMetrics.errorMsg=c.message;adMetrics.errorLine=c.lineNumber;adMetrics.errorUrl=c.fileName;adMetrics.error=true;window.top.postMessage(adMetrics,"*")}}};window.addEventListener("load",onLoadListener)}}catch(e){if(window&&window.top&&typeof(window.top.postMessage)==="function"){adMetrics.errorMsg=e.message;adMetrics.errorLine=e.lineNumber;adMetrics.errorUrl=e.fileName;adMetrics.error=true;window.top.postMessage(adMetrics,"*")}};
+</script><script src="./ext.js"></script><script>var viewReq = new Array();function vu(u) {var i=new Image();i.src=u.replace("&amp;","&");viewReq.push(i);}</script><script>vu("https://securepubads.g.doubleclick.net/pcs/view?xai\x3dAKAOjss5PQLlxe9tlb_qiYYZCR2SVvsV73ABop8tNIJ1sUkcOGtitvTo5i5r9Q4WHfbzq2A7SuUCkfcd-gbo9Ew4HcQsKjOjRcVj2ZJQfR51eUJUbSwMCEf9Jf9oOwa-ZW84BSf9n6yHuVJtyquZCKVfCwKaaAQW2DwHS5qNzNRMl521MEJTLKFowOUOS8Our9K-FRvvL8qZXI2Zu4Y41hqbHjLvvtzidl7clP-3Lq51HWe5mW5KIlHmHfcUNRhnav9u01LchA\x26sig\x3dCg0ArKJSzBdYfAmTp7EYEAE\x26urlfix\x3d1\x26adurl\x3d")</script><script>
+var trackers = [], 
+    trackerA = "".trim(),
+    trackerB = "".trim();
+
+if (trackerA.length > 0) {
+  trackers.push(trackerA + "1048055459");
+}
+
+if (trackerB.length > 0) {
+  trackers.push(trackerB + "1048055459");
+}
+
+var config = {
+    "type": "ad-native-flex",
+    "adUnit": "/23171577/expedia.us_en/home/all/NT3",
+    "description": "California's beach city welcomes you with year-round blue skies and friendly locals ",
+    "backgroundUrl": "https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCroMijywEQARgBMghaT1CUTG2Jmg",
+    "sponsoredText": "",
+    "clickThroughUrl": "https://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjssOaSnqS1s3-9nr6Q5xBmZOHfQRDEbhhxY1HSApNpAcCM0qujcIM_feudExPT4MPg5hTFTmD_BVdRIzvGQsBV3nx8pMvWD2RPsaaetZBkM-JFzcUd8fjWhsJxYGYI6llDdpBkVLrmlP5JprbSwA3ycDnqPJAFRme5U11AszO1gczVmd4szdLWrXB1TL_OG_UryOwRvoEzsu2p8HmatJMAzAidGdIqn9-aqMQkoYmAZ4ukkkjP4gd1EPBdaYRg%2526sig%253DCg0ArKJSzHtPW8cw_zqTEAE%2526urlfix%253D1%2526adurl%253Dhttps://www.expedia.com/lp/destinations/178304?MCICID=MSNTEUSSAND",
+    "openInTab": "yes" === "yes",
+    "isHouseAd": "Revenue Ad" === "House Ad",
+    "impressionTrackers": trackers
+};
+
+if (window && window.top && typeof window.top.postMessage === "function") {
+    window.top.postMessage(config, "*");
+}
+</script>
+<script src="./osd_listener.js"></script><script type="text/javascript">osdlfm(-1,'','B2CWz0JfuWdzrJ5WkigPNv4GQBAAAAAAQATgByAEJwAIC4AIA4AQBoAYf0ggFCIBhEAE','',1547518363,true,'ud\x3d1\x26la\x3d0\x26alp\x3dxai\x26alh\x3d4075907392\x26',3,'CAASEuRoPYMqriai5Mp-v7rd0xeZgA','//pagead2.googlesyndication.com/activeview?avi\x3dB2CWz0JfuWdzrJ5WkigPNv4GQBAAAAAAQATgByAEJwAIC4AIA4AQBoAYf0ggFCIBhEAE\x26cid\x3dCAASEuRoPYMqriai5Mp-v7rd0xeZgA');</script><script>if (window.top && window.top.postMessage) {window.top.postMessage('{"googMsgType":"adpnt"}','*');}</script><div style="top:0;left:0;width:368px;height:301px;background:initial !important;position:absolute !important;max-width:100% !important;max-height:100% !important;pointer-events:none !important;image-rendering:pixelated !important;z-index:2147483647;background-image:url(&#39;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAWBAMAAACrl3iAAAAABlBMVEUAAAD+AciWmZzWAAAAAnRSTlMAApidrBQAAAB/SURBVBjTbZEBEoQwDALJD/j/a08hJc14qVoz4koQ+F/lem7eIx2op8xyJwW8kE46SsV+R13UlR2L/cqGXdEtJ6cibd9yrLPJFhtJ4rD1EQOHHChtlfaMnvWTycoso+oyvq3Wdk05rmPEgmr3dSfIE9/KG8PfCaKd8/6XdbGBH3BRBdXr+jaAAAAAAElFTkSuQmCC&#39;) !important"></div>
+
+  
+
+</body></html>

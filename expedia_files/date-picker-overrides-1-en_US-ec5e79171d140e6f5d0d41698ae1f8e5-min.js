@@ -1,0 +1,2 @@
+require(["uitk","jquery","uitk_datepicker"],function(c,a,e){a(document).ready(function(){var a="Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(" "),d="SMTWTFS".split("");if("undefined"!==typeof c.datePickerCalendarObj){var b=c.datePickerCalendarObj.config;b.setFormatConfig("mmddyy","/");b.setUnitConfig(0,a,d);b.setTextConfig("Close")}})});
+//# sourceMappingURL=date-picker-overrides-1-en_US.js.map
