@@ -53,6 +53,11 @@
          }
          }, 10);
       </script>
+
+      <!-- ef_ -->
+      <script src="js/ef_scripts.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <link rel="dns-prefetch" href="https://a.intentmedia.net/">
       <link rel="dns-prefetch" href="https://images.trvl-media.com/">
@@ -649,7 +654,7 @@
                               <!-- temporary style hack to fix current mobile menu bug. To be removed once menus are fixed. -->
                               <button id="header-account-menu-signed-in" class="nav-tab trigger-link menu-trigger btn-text theme-standard pin-right" type="button" data-auto-pos="false" data-control="menu" data-omniture-id="Header.AccountHeading" data-onclick="" aria-expanded="false">
                               <span class="btn-label">
-                              <span class="selected-item"><span class="nonArrangedUser">Hello, <span id="userGreetingName">mingzhe</span></span> <span class="arrangedUser hidden"><span id="arrangedUserGreetingName"></span>'s Account</span></span>
+                              <span class="selected-item"><span class="nonArrangedUser">Hello, <span id="userGreetingName">V-Match</span></span> <span class="arrangedUser hidden"><span id="arrangedUserGreetingName"></span>'s Account</span></span>
                               <span class="icon icon-toggle180" aria-hidden="true"></span>
                               </span>
                               </button>
@@ -1211,7 +1216,7 @@
                      </a>
                   </div>
 
-                  
+
                   <section>
                      <div class="hero-banner-box cf">
                         <div id="next-trip-container"></div>
@@ -1345,7 +1350,7 @@
                                           </span>
                                        </span>
                                        <span class="tab-label">
-                                       BudgetMatcher<span class="visuallyhidden">
+                                       VacationMatchMaker<span class="visuallyhidden">
                                        Tab 1 of 8<span class="tab-label-selected-lob"> - selected</span>
                                        </span>
                                        </span>
@@ -1517,178 +1522,7 @@
                                                 <div class="datepicker-dropdown" style="right: auto; left: -2px;" aria-hidden="true"></div>
                                              </div>
                                           </div>
-                                          <div data-gcw-field-available-for-sub-nav-option="roundtrip,oneway,multi" class="available-for-flights gcw-clear-both">
-                                             <label class="select icon icon-toggle180 col gcw-traveller-field" for="flight-adults-hp-flight">
-                                                <span class="label">Adults (18+)</span>
-                                                <select id="flight-adults-hp-flight" class="num-adults gcw-storeable" data-gcw-storeable-name="gcw-num-adults-1" type="select" autocomplete="off">
-                                                   <option value="1" selected="selected">1</option>
-                                                   <option value="2">2</option>
-                                                   <option value="3">3</option>
-                                                   <option value="4">4</option>
-                                                   <option value="5">5</option>
-                                                   <option value="6">6</option>
-                                                </select>
-                                             </label>
-                                             <label class="select icon icon-toggle180 col gcw-traveller-field" for="flight-children-hp-flight">
-                                                <span class="label">Children (0-17)</span>
-                                                <select id="flight-children-hp-flight" class="num-children gcw-toggles-fields gcw-storeable seat-children gcw-toggles-field-by-value" data-gcw-storeable-name="gcw-num-children-1" data-gcw-toggled-field-class="gcw-child-field" data-gcw-toggled-field-parent-class="room-data" data-gcw-toggled-element-by-value="flight-children-help-hp-flight,0" type="select" autocomplete="off">
-                                                   <option value="0" selected="selected">0</option>
-                                                   <option value="1">1</option>
-                                                   <option value="2">2</option>
-                                                   <option value="3">3</option>
-                                                   <option value="4">4</option>
-                                                   <option value="5">5</option>
-                                                   <option value="6">6</option>
-                                                </select>
-                                             </label>
-                                          </div>
-                                       </div>
-                                       <div class="cols-nested children-data gcw-toggles-fields available-for-flights" data-gcw-field-available-for-sub-nav-option="roundtrip,oneway,multi">
-                                          <label id="flight-age-select-1-label-hp-flight" class="select icon icon-toggle180 col gcw-child-field gcw-disabled" for="flight-age-select-1-hp-flight">
-                                             <span class="label">Child 1 age</span>
-                                             <select id="flight-age-select-1-hp-flight" class="gcw-storeable gcw-toggles-field-by-value gcw-child-age-select" data-gcw-storeable-name="gcw-child-age-1-1" data-gcw-toggled-element-by-value="gcw-young-child-note,1" type="select" autocomplete="off">
-                                                <option value="" selected="selected">Age</option>
-                                                <option value="0">Under 1</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                             </select>
-                                          </label>
-                                          <label id="flight-age-select-2-label-hp-flight" class="select icon icon-toggle180 col gcw-child-field gcw-disabled" for="flight-age-select-2-hp-flight">
-                                             <span class="label">Child 2 age</span>
-                                             <select id="flight-age-select-2-hp-flight" class="gcw-storeable gcw-toggles-field-by-value gcw-child-age-select" data-gcw-storeable-name="gcw-child-age-1-2" data-gcw-toggled-element-by-value="gcw-young-child-note,1" type="select" autocomplete="off">
-                                                <option value="" selected="selected">Age</option>
-                                                <option value="0">Under 1</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                             </select>
-                                          </label>
-                                          <label id="flight-age-select-3-label-hp-flight" class="select icon icon-toggle180 col gcw-child-field gcw-disabled" for="flight-age-select-3-hp-flight">
-                                             <span class="label">Child 3 age</span>
-                                             <select id="flight-age-select-3-hp-flight" class="gcw-storeable gcw-toggles-field-by-value gcw-child-age-select" data-gcw-storeable-name="gcw-child-age-1-3" data-gcw-toggled-element-by-value="gcw-young-child-note,1" type="select" autocomplete="off">
-                                                <option value="" selected="selected">Age</option>
-                                                <option value="0">Under 1</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                             </select>
-                                          </label>
-                                          <label id="flight-age-select-4-label-hp-flight" class="select icon icon-toggle180 col gcw-child-field gcw-disabled" for="flight-age-select-4-hp-flight">
-                                             <span class="label">Child 4 age</span>
-                                             <select id="flight-age-select-4-hp-flight" class="gcw-storeable gcw-toggles-field-by-value gcw-child-age-select" data-gcw-storeable-name="gcw-child-age-1-4" data-gcw-toggled-element-by-value="gcw-young-child-note,1" type="select" autocomplete="off">
-                                                <option value="" selected="selected">Age</option>
-                                                <option value="0">Under 1</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                             </select>
-                                          </label>
-                                          <label id="flight-age-select-5-label-hp-flight" class="select icon icon-toggle180 col gcw-child-field gcw-disabled" for="flight-age-select-5-hp-flight">
-                                             <span class="label">Child 5 age</span>
-                                             <select id="flight-age-select-5-hp-flight" class="gcw-storeable gcw-toggles-field-by-value gcw-child-age-select" data-gcw-storeable-name="gcw-child-age-1-5" data-gcw-toggled-element-by-value="gcw-young-child-note,1" type="select" autocomplete="off">
-                                                <option value="" selected="selected">Age</option>
-                                                <option value="0">Under 1</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                             </select>
-                                          </label>
-                                          <label id="flight-age-select-6-label-hp-flight" class="select icon icon-toggle180 col gcw-child-field gcw-disabled" for="flight-age-select-6-hp-flight">
-                                             <span class="label">Child 6 age</span>
-                                             <select id="flight-age-select-6-hp-flight" class="gcw-storeable gcw-toggles-field-by-value gcw-child-age-select" data-gcw-storeable-name="gcw-child-age-1-6" data-gcw-toggled-element-by-value="gcw-young-child-note,1" type="select" autocomplete="off">
-                                                <option value="" selected="selected">Age</option>
-                                                <option value="0">Under 1</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                             </select>
-                                          </label>
-                                       </div>
+
                                     </fieldset>
                                     <div class="cols-nested gcw-multidest-flights-container gcw-disabled" data-gcw-field-available-for-sub-nav-option="multi">
                                        <div class="col">
@@ -4327,7 +4161,11 @@
                                  </form>
                               </section>
                               <section class="tab-pane  cf gcw-section-flights-tab" id="section-flight-tab-hp1">
-                                 <form id="gcw-flights-form-hp-flight" class="gcw-form flights gcw-lessThanNTravelers gcw-childAgesAllProvided gcw-allFlightsComplete gcw-allOriginsAreDifferentFromDestinations flexible-shopping-form ess-passthrough-disabled" data-gcw-key="hp-flight" data-gcw-max-travelers="6" action="https://www.expedia.com/Flights-Search" method="GET" data-gcw-processing-function="flights" data-gcw-datapreloading-function="flights" data-gcw-controller="flights" data-locale="en_US" data-siteid="1" data-location-search-type="uta" data-lob-form="flight" data-gcw-current-package-type="flight">
+                                 <form onsubmit="searchButtonClicked()" id="gcw-flights-form-hp-flight" class="gcw-form flights gcw-lessThanNTravelers gcw-childAgesAllProvided gcw-allFlightsComplete gcw-allOriginsAreDifferentFromDestinations flexible-shopping-form ess-passthrough-disabled" data-gcw-key="hp-flight" data-gcw-max-travelers="6"  data-gcw-processing-function="flights" data-gcw-datapreloading-function="flights" data-gcw-controller="flights" data-locale="en_US" data-siteid="1" data-location-search-type="uta" data-lob-form="flight" data-gcw-current-package-type="flight">
+
+                                    <!-- action="https://www.expedia.com/Flights-Search" method="GET" -->
+
+
                                     <div class="mobile-hero-banner-title">
                                        Search Vacation Budgeter 
                                     </div>
@@ -4342,8 +4180,6 @@
                                        <legend class="visuallyhidden">Flight type - changes form below</legend>
                                        <label id="flight-type-roundtrip-label-hp-flight" class="check col" for="flight-type-roundtrip-hp-flight">
                                        <input id="flight-type-roundtrip-hp-flight" type="radio" name="flight-type" class=" gcw-storeable gcw-sub-nav-option" data-gcw-storeable-name="gcw-flights-sub-nav-roundtrip" data-gcw-sub-nav-option-name="roundtrip" checked="" autocomplete="off">
-                                       <span class="inline-label">
-                                       Roundtrip</span>
                                        </label>
                                        <div class="col flight-helper gcw-disabled">
                                           <a href="https://www.expedia.com/#" data-control="tooltip" data-content="You can only book a package with a roundtrip flight." data-width="300" data-arrow="true" data-fade="out" data-manual="none" data-show-tooltip="true"><span class="icon icon-help"></span></a>
@@ -4354,8 +4190,8 @@
                                           <div class="autocomplete pin-left theme-standard" data-control="autocomplete">
                                              <div class="input-btn-group">
                                                 <label class="text icon-before autocomplete-arrow gcw-flights-from" for="flight-origin-hp-flight">
-                                                   <span class="label">Flying from</span>
-                                                   <input aria-autocomplete="list" aria-owns="typeaheadDataPlain" autocomplete="off" class="clear-btn-input gcw-storeable text gcw-origin gcw-required gcw-distinct-locations " data-gcw-field-type="origin" data-gcw-storeable-name="gcw-origin" data-js-theme="autocomplete" data-lob="FLIGHTS" data-locale="en_US" data-mask="95" data-minchar="1" data-provide="utypeahead" data-template="hbs/templates/destinationCustom" data-tooltip-id="typeaheadDataPlain" data-version="v4" data-airport_code_element="flight-origin-hp-flight-airport_code" data-hotel_id_element="flight-origin-hp-flight-hotel_id" data-lat_long_element="flight-origin-hp-flight-lat_long" data-region_id_element="flight-origin-hp-flight-region_id" data-region_type_element="flight-origin-hp-flight-region_type" data-station_code_element="flight-origin-hp-flight-station_code" data-point_of_supply_element="flight-origin-hp-flight-point_of_supply" data-city_element="flight-origin-hp-flight-city" data-country_code_element="flight-origin-hp-flight-country_code" data-category_element="flight-origin-hp-flight-category" data-heds_element="flight-origin-hp-flight-heds" data-search_name_element="flight-origin-hp-flight-search_name" data-ta_element="flight-origin-hp-flight-ta" id="flight-origin-hp-flight" placeholder="City or airport" spellcheck="false" type="text">
+                                                   <span class="label">Departure from*</span>
+                                                   <input id="departureFrom_ef" placeholder="City or airport" spellcheck="false" type="text">
                                                    <span class="icon" aria-hidden="true" style="pointer-events: none">
                                                       <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="uitk-icon-svg">
                                                          <use xlink:href="#uitk-icon-location"></use>
@@ -4394,8 +4230,8 @@
                                           <div class="autocomplete pin-left theme-standard" data-control="autocomplete">
                                              <div class="input-btn-group">
                                                 <label class="text icon-before autocomplete-arrow gcw-flights-to" for="flight-destination-hp-flight">
-                                                   <span class="label">Flying to</span>
-                                                   <input aria-autocomplete="list" aria-owns="typeaheadDataPlain" autocomplete="off" class="clear-btn-input gcw-storeable text gcw-destination gcw-required gcw-distinct-locations " data-dest="true" data-gcw-field-type="destination" data-gcw-storeable-name="gcw-destination" data-js-theme="autocomplete" data-lob="FLIGHTS" data-locale="en_US" data-mask="95" data-minchar="1" data-provide="utypeahead" data-template="hbs/templates/destinationCustom" data-tooltip-id="typeaheadDataPlain" data-version="v4" data-airport_code_element="flight-destination-hp-flight-airport_code" data-hotel_id_element="flight-destination-hp-flight-hotel_id" data-lat_long_element="flight-destination-hp-flight-lat_long" data-region_id_element="flight-destination-hp-flight-region_id" data-region_type_element="flight-destination-hp-flight-region_type" data-station_code_element="flight-destination-hp-flight-station_code" data-point_of_supply_element="flight-destination-hp-flight-point_of_supply" data-city_element="flight-destination-hp-flight-city" data-country_code_element="flight-destination-hp-flight-country_code" data-category_element="flight-destination-hp-flight-category" data-heds_element="flight-destination-hp-flight-heds" data-search_name_element="flight-destination-hp-flight-search_name" data-ta_element="flight-destination-hp-flight-ta" id="flight-destination-hp-flight" placeholder="City or airport" spellcheck="false" type="text">
+                                                   <span class="label">Travel to</span>
+                                                   <input aria-autocomplete="list" aria-owns="typeaheadDataPlain" autocomplete="off" class="clear-btn-input gcw-storeable text gcw-destination gcw-required gcw-distinct-locations " data-dest="true" data-gcw-field-type="destination" data-gcw-storeable-name="gcw-destination" data-js-theme="autocomplete" data-lob="FLIGHTS" data-locale="en_US" data-mask="95" data-minchar="1" data-provide="utypeahead" data-template="hbs/templates/destinationCustom" data-tooltip-id="typeaheadDataPlain" data-version="v4" data-airport_code_element="flight-destination-hp-flight-airport_code" data-hotel_id_element="flight-destination-hp-flight-hotel_id" data-lat_long_element="flight-destination-hp-flight-lat_long" data-region_id_element="flight-destination-hp-flight-region_id" data-region_type_element="flight-destination-hp-flight-region_type" data-station_code_element="flight-destination-hp-flight-station_code" data-point_of_supply_element="flight-destination-hp-flight-point_of_supply" data-city_element="flight-destination-hp-flight-city" data-country_code_element="flight-destination-hp-flight-country_code" data-category_element="flight-destination-hp-flight-category" data-heds_element="flight-destination-hp-flight-heds" data-search_name_element="flight-destination-hp-flight-search_name" data-ta_element="flight-destination-hp-flight-ta" id="travelTo_ef" placeholder="City or airport" spellcheck="false" type="text">
                                                    <span class="icon" aria-hidden="true" style="pointer-events: none">
                                                       <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="uitk-icon-svg">
                                                          <use xlink:href="#uitk-icon-location"></use>
@@ -4437,23 +4273,7 @@
                                              <div id="flight-departing-wrapper-single-hp-flight" data-control="datepicker" class="datepicker theme-standard pin-left" data-last-valid-date="9/19/2018" data-auto-pos="true">
                                                 <label class="datepicker-label datepicker-arrow text icon-before gcw-flights-start-date" for="flight-departing-single-hp-flight">
                                                    <span class="label">Departing</span>
-                                                   <input id="flight-departing-single-hp-flight" class="text datepicker-trigger-input gcw-start-date gcw-storeable gcw-required gcw-valid-date" type="text" placeholder="mm/dd/yyyy" data-gcw-date-format="mm/dd/yyyy" autocomplete="off" data-gcw-storeable-name="gcw-start-date" data-gcw-field-type="departing date" name="starDate">
-                                                   <span class="icons-container">
-                                                      <span class="uitk-icon uitk-icon-calendar" data-control="uitk-icon" aria-hidden="true">
-                                                         <svg class="uitk-icon-svg">
-                                                            <use xlink:href="#uitk-icon-calendar"></use>
-                                                         </svg>
-                                                      </span>
-                                                   </span>
-                                                </label>
-                                                <div class="datepicker-dropdown" aria-hidden="true"></div>
-                                             </div>
-                                          </div>
-                                          <div class="col gcw-date-field" data-gcw-field-available-for-sub-nav-option="roundtrip">
-                                             <div id="flight-departing-wrapper-hp-flight" data-control="datepicker" class="datepicker theme-standard pin-left" data-end-date="#flight-returning-wrapper-hp-flight" data-last-valid-date="9/19/2018" data-default-range-length="0" data-max-range-length="331" data-auto-pos="true">
-                                                <label class="datepicker-label datepicker-arrow text icon-before gcw-flights-start-date" for="flight-departing-hp-flight">
-                                                   <span class="label">Departing</span>
-                                                   <input id="flight-departing-hp-flight" class="text datepicker-trigger-input gcw-start-date gcw-update-date-range gcw-storeable gcw-required gcw-valid-date" type="text" placeholder="mm/dd/yyyy" data-gcw-date-format="mm/dd/yyyy" autocomplete="off" data-min-range-length="0" data-gcw-storeable-name="gcw-start-date" data-gcw-field-type="departing date" name="starDate">
+                                                   <input id="departure_ef" class="text datepicker-trigger-input gcw-start-date gcw-storeable gcw-required gcw-valid-date" type="text" placeholder="mm/dd/yyyy" data-gcw-date-format="mm/dd/yyyy" autocomplete="off" data-gcw-storeable-name="gcw-start-date" data-gcw-field-type="departing date" name="starDate">
                                                    <span class="icons-container">
                                                       <span class="uitk-icon uitk-icon-calendar" data-control="uitk-icon" aria-hidden="true">
                                                          <svg class="uitk-icon-svg">
@@ -4469,7 +4289,23 @@
                                              <div id="flight-returning-wrapper-hp-flight" data-control="datepicker" class="datepicker theme-standard pin-left" data-start-date="#flight-departing-wrapper-hp-flight" data-auto-pos="true">
                                                 <label class="datepicker-label datepicker-arrow text icon-before gcw-flights-end-date gcw-flights-input-multi" for="flight-returning-hp-flight">
                                                    <span class="label">Returning</span>
-                                                   <input id="flight-returning-hp-flight" class="text datepicker-trigger-input gcw-end-date gcw-update-date-range gcw-storeable gcw-required gcw-valid-date" type="text" placeholder="mm/dd/yyyy" data-gcw-date-format="mm/dd/yyyy" autocomplete="off" data-gcw-storeable-name="gcw-end-date" data-gcw-field-type="returning date" name="endDate">
+                                                   <input id="returning_ef" class="text datepicker-trigger-input gcw-end-date gcw-update-date-range gcw-storeable gcw-required gcw-valid-date" type="text" placeholder="mm/dd/yyyy" data-gcw-date-format="mm/dd/yyyy" autocomplete="off" data-gcw-storeable-name="gcw-end-date" data-gcw-field-type="returning date" name="endDate">
+                                                   <span class="icons-container">
+                                                      <span class="uitk-icon uitk-icon-calendar" data-control="uitk-icon" aria-hidden="true">
+                                                         <svg class="uitk-icon-svg">
+                                                            <use xlink:href="#uitk-icon-calendar"></use>
+                                                         </svg>
+                                                      </span>
+                                                   </span>
+                                                </label>
+                                                <div class="datepicker-dropdown" style="right: auto; left: -2px;" aria-hidden="true"></div>
+                                             </div>
+                                          </div>
+                                          <div class="col gcw-date-field" data-gcw-field-available-for-sub-nav-option="roundtrip">
+                                             <div id="flight-returning-wrapper-hp-flight" data-control="datepicker" class="datepicker theme-standard pin-left" data-start-date="#flight-departing-wrapper-hp-flight" data-auto-pos="true">
+                                                <label class="datepicker-label datepicker-arrow text icon-before gcw-flights-end-date gcw-flights-input-multi" for="flight-returning-hp-flight">
+                                                   <span class="label">Budget</span>
+                                                   <input id="budget_ef" class="text" type="text" autocomplete="off"  data-gcw-field-type="returning date" name="endDate">
                                                    <span class="icons-container">
                                                       <span class="uitk-icon uitk-icon-calendar" data-control="uitk-icon" aria-hidden="true">
                                                          <svg class="uitk-icon-svg">
@@ -4482,176 +4318,7 @@
                                              </div>
                                           </div>
                                           <div data-gcw-field-available-for-sub-nav-option="roundtrip,oneway,multi" class="available-for-flights gcw-clear-both">
-                                             <label class="select icon icon-toggle180 col gcw-traveller-field" for="flight-adults-hp-flight">
-                                                <span class="label">Adults (18+)</span>
-                                                <select id="flight-adults-hp-flight" class="num-adults gcw-storeable" data-gcw-storeable-name="gcw-num-adults-1" type="select" autocomplete="off">
-                                                   <option value="1" selected="selected">1</option>
-                                                   <option value="2">2</option>
-                                                   <option value="3">3</option>
-                                                   <option value="4">4</option>
-                                                   <option value="5">5</option>
-                                                   <option value="6">6</option>
-                                                </select>
-                                             </label>
-                                             <label class="select icon icon-toggle180 col gcw-traveller-field" for="flight-children-hp-flight">
-                                                <span class="label">Children (0-17)</span>
-                                                <select id="flight-children-hp-flight" class="num-children gcw-toggles-fields gcw-storeable seat-children gcw-toggles-field-by-value" data-gcw-storeable-name="gcw-num-children-1" data-gcw-toggled-field-class="gcw-child-field" data-gcw-toggled-field-parent-class="room-data" data-gcw-toggled-element-by-value="flight-children-help-hp-flight,0" type="select" autocomplete="off">
-                                                   <option value="0" selected="selected">0</option>
-                                                   <option value="1">1</option>
-                                                   <option value="2">2</option>
-                                                   <option value="3">3</option>
-                                                   <option value="4">4</option>
-                                                   <option value="5">5</option>
-                                                   <option value="6">6</option>
-                                                </select>
-                                             </label>
                                           </div>
-                                       </div>
-                                       <div class="cols-nested children-data gcw-toggles-fields available-for-flights" data-gcw-field-available-for-sub-nav-option="roundtrip,oneway,multi">
-                                          <label id="flight-age-select-1-label-hp-flight" class="select icon icon-toggle180 col gcw-child-field gcw-disabled" for="flight-age-select-1-hp-flight">
-                                             <span class="label">Child 1 age</span>
-                                             <select id="flight-age-select-1-hp-flight" class="gcw-storeable gcw-toggles-field-by-value gcw-child-age-select" data-gcw-storeable-name="gcw-child-age-1-1" data-gcw-toggled-element-by-value="gcw-young-child-note,1" type="select" autocomplete="off">
-                                                <option value="" selected="selected">Age</option>
-                                                <option value="0">Under 1</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                             </select>
-                                          </label>
-                                          <label id="flight-age-select-2-label-hp-flight" class="select icon icon-toggle180 col gcw-child-field gcw-disabled" for="flight-age-select-2-hp-flight">
-                                             <span class="label">Child 2 age</span>
-                                             <select id="flight-age-select-2-hp-flight" class="gcw-storeable gcw-toggles-field-by-value gcw-child-age-select" data-gcw-storeable-name="gcw-child-age-1-2" data-gcw-toggled-element-by-value="gcw-young-child-note,1" type="select" autocomplete="off">
-                                                <option value="" selected="selected">Age</option>
-                                                <option value="0">Under 1</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                             </select>
-                                          </label>
-                                          <label id="flight-age-select-3-label-hp-flight" class="select icon icon-toggle180 col gcw-child-field gcw-disabled" for="flight-age-select-3-hp-flight">
-                                             <span class="label">Child 3 age</span>
-                                             <select id="flight-age-select-3-hp-flight" class="gcw-storeable gcw-toggles-field-by-value gcw-child-age-select" data-gcw-storeable-name="gcw-child-age-1-3" data-gcw-toggled-element-by-value="gcw-young-child-note,1" type="select" autocomplete="off">
-                                                <option value="" selected="selected">Age</option>
-                                                <option value="0">Under 1</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                             </select>
-                                          </label>
-                                          <label id="flight-age-select-4-label-hp-flight" class="select icon icon-toggle180 col gcw-child-field gcw-disabled" for="flight-age-select-4-hp-flight">
-                                             <span class="label">Child 4 age</span>
-                                             <select id="flight-age-select-4-hp-flight" class="gcw-storeable gcw-toggles-field-by-value gcw-child-age-select" data-gcw-storeable-name="gcw-child-age-1-4" data-gcw-toggled-element-by-value="gcw-young-child-note,1" type="select" autocomplete="off">
-                                                <option value="" selected="selected">Age</option>
-                                                <option value="0">Under 1</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                             </select>
-                                          </label>
-                                          <label id="flight-age-select-5-label-hp-flight" class="select icon icon-toggle180 col gcw-child-field gcw-disabled" for="flight-age-select-5-hp-flight">
-                                             <span class="label">Child 5 age</span>
-                                             <select id="flight-age-select-5-hp-flight" class="gcw-storeable gcw-toggles-field-by-value gcw-child-age-select" data-gcw-storeable-name="gcw-child-age-1-5" data-gcw-toggled-element-by-value="gcw-young-child-note,1" type="select" autocomplete="off">
-                                                <option value="" selected="selected">Age</option>
-                                                <option value="0">Under 1</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                             </select>
-                                          </label>
-                                          <label id="flight-age-select-6-label-hp-flight" class="select icon icon-toggle180 col gcw-child-field gcw-disabled" for="flight-age-select-6-hp-flight">
-                                             <span class="label">Child 6 age</span>
-                                             <select id="flight-age-select-6-hp-flight" class="gcw-storeable gcw-toggles-field-by-value gcw-child-age-select" data-gcw-storeable-name="gcw-child-age-1-6" data-gcw-toggled-element-by-value="gcw-young-child-note,1" type="select" autocomplete="off">
-                                                <option value="" selected="selected">Age</option>
-                                                <option value="0">Under 1</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                             </select>
-                                          </label>
                                        </div>
                                     </fieldset>
                                     <div class="cols-nested gcw-multidest-flights-container gcw-disabled" data-gcw-field-available-for-sub-nav-option="multi">
@@ -4788,56 +4455,6 @@
                                           </label>
                                           </span>
                                        </fieldset>
-                                    </div>
-                                    <fieldset class="gcw-advanced-options">
-                                       <a role="button" id="flight-advanced-options-hp-flight" href="https://www.expedia.com/#flight-advanced-options-fields-hp-flight" aria-controls="flight-advanced-options-fields-hp-flight" data-control="toggle" data-transition="fade" data-toggle-text="Advanced options" class="toggle-trigger  secondary gcw-show-adv-options " data-isdisplay-icon="true" aria-expanded="false" data-expand-text="Advanced options&lt;span class=&quot;icon icon-expand&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;" data-collapse-text="Advanced options&lt;span class=&quot;icon icon-expand&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;">
-                                       Advanced options<span class="icon icon-expand" aria-hidden="true"></span>
-                                       </a>
-                                       <div id="flight-advanced-options-fields-hp-flight" class="toggle-pane fade " role="region" style="visibility: hidden; opacity: 0;" aria-hidden="true">
-                                          <div class="toggle-inner">
-                                             <div class="cols-row">
-                                                <label id="advanced-flight-nonstop-label-hp-flight" class="check gcw-advanced-options" for="advanced-flight-nonstop-hp-flight">
-                                                <input id="advanced-flight-nonstop-hp-flight" class="gcw-toggle-checkbox gcw-show-with-value gcw-storeable gcw-nonstop-checkbox" type="checkbox" data-gcw-storeable-name="gcw-flights-nonstop" name="" autocomplete="off" aria-label="Nonstop">
-                                                <span class="inline-label">&nbsp;Nonstop</span>
-                                                </label>
-                                                <label id="advanced-flight-refundable-label-hp-flight" class="check gcw-advanced-options" for="advanced-flight-refundable-hp-flight">
-                                                <input id="advanced-flight-refundable-hp-flight" class="gcw-toggle-checkbox gcw-show-with-value gcw-storeable gcw-refundable-checkbox" type="checkbox" data-gcw-storeable-name="gcw-flights-refundable" name="" autocomplete="off" aria-label="Refundable flight">
-                                                <span class="inline-label">&nbsp;Refundable flight</span>
-                                                </label>
-                                             </div>
-                                             <div class="cols-nested gcw-adv-options">
-                                                <label id="flight-advanced-preferred-airline-label-hp-flight" class="select icon icon-toggle180 col" for="flight-advanced-preferred-airline-hp-flight">
-                                                   <span class="label">Preferred airline</span>
-                                                   <select id="flight-advanced-preferred-airline-hp-flight" class="gcw-storeable gcw-show-with-value gcw-airline-select" data-gcw-storeable-name="gcw-flights-airline" type="select" autocomplete="off">
-                                                      <option selected="selected" value=""> No preference</option>
-                                                   </select>
-                                                </label>
-                                                <label id="flight-advanced-preferred-class-label-hp-flight" class="select icon icon-toggle180 col" for="flight-advanced-preferred-class-hp-flight">
-                                                   <span class="label">Preferred class</span>
-                                                   <select id="flight-advanced-preferred-class-hp-flight" class="gcw-storeable gcw-show-with-value gcw-cabin-class-select" data-gcw-storeable-name="gcw-cabin-class" type="select" name="" autocomplete="off">
-                                                      <option value="first">First class</option>
-                                                      <option value="business">Business</option>
-                                                      <option value="premium">Premium economy</option>
-                                                      <option value="" selected="selected">Economy/Coach</option>
-                                                   </select>
-                                                </label>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </fieldset>
-                                    <div class="cols-nested" data-gcw-field-available-for-sub-nav-option="roundtrip">
-                                       <label class="check col gcw-flights-add-hotel " for="flight-add-hotel-checkbox-hp-flight">
-                                       <input id="flight-add-hotel-checkbox-hp-flight" class="soft-package gcw-toggle-search-type gcw-hide-adults-children gcw-disable-enable-sub-nav gcw-toggle-checkbox gcw-storeable gcw-trigger-tooltip gcw-change-title-text gcw-update-datepicker-range gcw-package-type" type="checkbox" data-soft-package="hotel" data-gcw-storeable-name="gcw-flights-add-hotel" data-gcw-toggled-element=".gcw-add-hotel;.f-fh-msg-tooltip" data-max-range-length="331" data-gcw-search-type="hotels" data-gcw-change-title-text="Search Flights;Search Vacation Packages;Search Vacation Packages" name="addHotel" value="a" autocomplete="off">
-                                       <span class="inline-label">
-                                       <span class="icon icon-hotels" aria-hidden="true"></span>
-                                       <span class="alt">Add a hotel</span>&nbsp;Add a hotel</span>
-                                       </label>
-                                       <label class="check col gcw-flights-add-car " for="flight-add-car-checkbox-hp-flight">
-                                       <input id="flight-add-car-checkbox-hp-flight" class="soft-package gcw-toggle-search-type gcw-disable-enable-sub-nav gcw-toggle-checkbox gcw-storeable gcw-trigger-tooltip gcw-change-title-text gcw-hide-advanced-section gcw-package-type" type="checkbox" data-soft-package="car" data-gcw-storeable-name="gcw-flights-add-car" data-gcw-toggled-element=".f-fc-msg-tooltip" data-gcw-search-type="car" data-gcw-change-title-text="Search Flights;Search Vacation Packages;Search Vacation Packages" name="addCar" value="a" autocomplete="off">
-                                       <span class="inline-label">
-                                       <span class="icon icon-cars" aria-hidden="true"></span>
-                                       <span class="alt">Add a car</span>&nbsp;Add a car</span>
-                                       </label>
                                     </div>
                                     <div data-gcw-field-available-for-sub-nav-option="roundtrip">
                                        <div class="gcw-package-wrapper gcw-disabled gcw-add-hotel" id="flights-add-hotel-hp-flight">
@@ -5001,6 +4618,7 @@
          </div>
       </section>
 
+<div id = "no-destination-content" display="none">
 
 <!-- Flex Card -->
 <div class="uitk-grid all-x-gutter-12 flex-listing flex-theme-light flex-image-alt ">
@@ -5069,6 +4687,7 @@
       </div>
    </div>
 </div>
+      </div>
 
 
       <script>
