@@ -51,7 +51,6 @@ function searchButtonClicked() {
         async: false,
         header: 'Access-Control-Allow-Origin',
         success: function(msg) {
-            document.getElementById("json").innerHTML = msg;
             jsonText = msg;
         }
      }); 
@@ -74,12 +73,10 @@ function searchButtonClicked() {
 
    
    // $( "#WizardHero" ).hide();
+   $( "#extraDeco" ).hide();
 }
 
-function insertNoDestFlexCardContent(parent_id,component){
-   $( parent_id ).append(component);
-   // $( "#ace-hotel1" ).show();
-}
+
 
    
 function dateFormat(date){
@@ -89,36 +86,53 @@ function dateFormat(date){
 }
 
 function nonDestTileClicked(api_path){
-   alert("nonDestTileClicked Trigged Path: " + api_path);
+   //alert("nonDestTileClicked Trigged Path: " + api_path);
    // var destJsonText;
 
 
-   // //ajax call to the api to retrive the bundle info
-   //   $.ajax({
-   //      url: api_path,
-   //      type: 'GET',
-   //      async: false,
-   //      header: 'Access-Control-Allow-Origin',
-   //      success: function(msg) {
-   //          document.getElementById("json").innerHTML = msg;
-   //          destJsonText = msg;
-   //      }
-   //   }); 
+   //ajax call to the api to retrive the bundle info
+     $.ajax({
+        url: api_path,
+        type: 'GET',
+        async: false,
+        header: 'Access-Control-Allow-Origin',
+        success: function(msg) {
+            destJsonText = msg;
+        }
+     }); 
 
    //   //Conver the Json Text to Javascript Object
-   //   var DestJsonObjList = JSON.parse(destJsonText);
-   //   //append the flex card into the html and display the destination for the 
+     var DestJsonObjList = JSON.parse(destJsonText);
+     //append the flex card into the html and display the destination for the 
 
-   // for (var i = 0, len = DestJsonObjList.length; i < len; ++i) {
-   //       var DestContent = DestJsonObjList[i];
-   //       var picUrl = 'css/'+ noDestContent.CityName.replace(/\s/g, '')+'.jpg';
-   //       var dest = noDestContent.CityName;
-   //       var pric = noDestContent.MinPrice;
-   //       var apiId = apiServerIP + "Test/test?start_date="+departing+"&end_date="+returning+"&departureCity="+departure_location+"&destinationCity="+dest+"&budget="+budget;
+   for (var i = 0, len = DestJsonObjList.length; i < len; ++i) {
+         var DestContent = DestJsonObjList[i];
+         var destCity = DestContent.Destination;
+         var pric = DestContent.price;
+         var savings = DestContent.saving;
 
-   //       var flexCardComponent = "<div id='"+apiServerIP+"' onclick= 'nonDestTileClicked(this.id)' class='uitk-col '><div class='flex-card has-link'><div class='flex-figure'><figure class='image aspect-ratio16-9 loading' data-media-type='image' data-lazy='true' data-src="+picUrl+" data-aspect-ratio='16-9' data-class='tile-media'><noscript><img src='path/to/image.jpg' alt=' class='tile-media' /></noscript><span class='media-loader'><span class=' loader-primary loader-light loader-static loading' aria-hidden='true' title='Loading...'></span></span></figure></div><div class='message-flag flex-flag'>Save Huge!</div><div class='flex-content'><div class='flex-area-primary'><h2 class='flex-title truncate'>"+dest+"</h2><p class='secondary'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis leo.</p></div><div class='flex-area-secondary'><p><span class='flex-price'>"+pric+"</span></p></div></div><a class='flex-link' href='http:/'>link info</a><div class='flex-area-tertiary'><button type='button' data-control='remove' data-target-id='ace-hotel' class='btn-primary btn-close module-close flex-close'><span class='icon icon-close' aria-hidden='true'></span><span class='alt'>Close</span></button></div></div></div>"
-   //       insertNoDestFlexCardContent("#no-destination-content",flexCardComponent);   
-   //    }
+         //flight
+         var ticketsRemaining = DestContent.flight.ticketsRemaining;
+
+         //hotel
+         var hotelName = DestContent.hotel.hotelName;
+         var starRating = DestContent.hotel.starRating;
+         var thumbNail = DestContent.hotel.thumbNail;
+         var roomRatePlan = DestContent.hotel.roomRatePlan
+
+         //url
+         var redirectUrl = DestContent.hotel.detailURL;
+
+         var destFlexCardComponent = "<div id='exampleId02' class='uitk-col'><div class='flex-card has-link'><div class='flex-figure'><figure class='image aspect-ratio16-9 loading' data-media-type='image' data-lazy='true' data-src='"+thumbNail+"' data-aspect-ratio='16-9' data-class='tile-media'><noscript><img src='path/to/image.jpg' alt=' class='tile-media' /></noscript><span class='media-loader'><span class=' loader-primary loader-light loader-static loading' aria-hidden='true' title='Loading...'></span></span></figure></div><div class='message-flag flex-flag'>save big!</div><div class='flex-content'><div class='flex-area-primary'><h2 class='flex-title truncate'>"+destCity+"</h2><h2 class='flex-title truncate'>" + hotelName+ ".</h2><h2 class='flex-title truncate'> Remaining tickets:  "+ticketsRemaining+" </h2><p class='secondary'>Hotel Rating : "+starRating+"</p><p class='secondary'>"+roomRatePlan+"</p></div><div class='flex-area-secondary'><p><span class='flex-price'>Total Cost: "+pric+"</span></p><p><span class='flex-price'>You saved! :"+savings+"</span></p></div></div><a class='flex-link' href="+redirectUrl+">Click to see more details</a><div class='flex-area-tertiary'><button type='button' data-control='remove' data-target-id='exampleId02' class='btn-primary btn-close module-close flex-close'><span class='icon icon-close' aria-hidden='true'></span><span class='alt'>Close</span></button></div></div></div>"
+
+         insertNoDestFlexCardContent("#dest-flex-card-container",destFlexCardComponent);   
+      }
+      
+   $( "#no-destination-content").hide();
+}
+
+function insertNoDestFlexCardContent(parent_id,component){
+   $( parent_id ).append(component);
 }
 
 
