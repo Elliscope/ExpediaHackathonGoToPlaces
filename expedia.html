@@ -1935,7 +1935,7 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <input type="hidden" name="_xpid" value="11905|1">
+ <!--                                    <input type="hidden" name="_xpid" value="11905|1">
                                     <input type="hidden" name="mode" value="search">
                                     <input type="hidden" class="gcw-clear-before-submit" name="trip" value="">
                                     <input type="hidden" class="gcw-clear-before-submit" name="leg1" value="">
@@ -1944,7 +1944,7 @@
                                     <input type="hidden" class="gcw-clear-before-submit" name="leg4" value="">
                                     <input type="hidden" class="gcw-clear-before-submit" name="leg5" value="">
                                     <input type="hidden" class="gcw-clear-before-submit" name="passengers" value="">
-                                    <input type="hidden" class="gcw-clear-before-submit" name="options" value="">
+                                    <input type="hidden" class="gcw-clear-before-submit" name="options" value=""> -->
                                     <div class="cols-nested">
                                        <label class="col search-btn-col">
                                        <button type="submit" class="btn-primary btn-action gcw-submit">
@@ -4161,7 +4161,7 @@
                                  </form>
                               </section>
                               <section class="tab-pane  cf gcw-section-flights-tab" id="section-flight-tab-hp1">
-                                 <form onsubmit="searchButtonClicked()" id="gcw-flights-form-hp-flight" class="gcw-form flights gcw-lessThanNTravelers gcw-childAgesAllProvided gcw-allFlightsComplete gcw-allOriginsAreDifferentFromDestinations flexible-shopping-form ess-passthrough-disabled" data-gcw-key="hp-flight" data-gcw-max-travelers="6"  data-gcw-processing-function="flights" data-gcw-datapreloading-function="flights" data-gcw-controller="flights" data-locale="en_US" data-siteid="1" data-location-search-type="uta" data-lob-form="flight" data-gcw-current-package-type="flight">
+                                 <form onsubmit='searchButtonClicked()' id="gcw-flights-form-hp-flight" class="gcw-form flights gcw-lessThanNTravelers gcw-childAgesAllProvided gcw-allFlightsComplete gcw-allOriginsAreDifferentFromDestinations flexible-shopping-form ess-passthrough-disabled" data-gcw-key="hp-flight" data-gcw-max-travelers="6"  data-gcw-processing-function="flights" data-gcw-datapreloading-function="flights" data-gcw-controller="flights" data-locale="en_US" data-siteid="1" data-location-search-type="uta" data-lob-form="flight" data-gcw-current-package-type="flight">
 
                                     <!-- action="https://www.expedia.com/Flights-Search" method="GET" -->
 
@@ -4273,7 +4273,7 @@
                                              <div id="flight-departing-wrapper-single-hp-flight" data-control="datepicker" class="datepicker theme-standard pin-left" data-last-valid-date="9/19/2018" data-auto-pos="true">
                                                 <label class="datepicker-label datepicker-arrow text icon-before gcw-flights-start-date" for="flight-departing-single-hp-flight">
                                                    <span class="label">Departing</span>
-                                                   <input id="departure_ef" class="text datepicker-trigger-input gcw-start-date gcw-storeable gcw-required gcw-valid-date" type="text" placeholder="mm/dd/yyyy" data-gcw-date-format="mm/dd/yyyy" autocomplete="off" data-gcw-storeable-name="gcw-start-date" data-gcw-field-type="departing date" name="starDate">
+                                                   <input id="departing_ef" class="text datepicker-trigger-input gcw-start-date gcw-storeable gcw-required gcw-valid-date" type="text" placeholder="mm/dd/yyyy" data-gcw-date-format="mm/dd/yyyy" autocomplete="off" data-gcw-storeable-name="gcw-start-date" data-gcw-field-type="departing date" name="starDate">
                                                    <span class="icons-container">
                                                       <span class="uitk-icon uitk-icon-calendar" data-control="uitk-icon" aria-hidden="true">
                                                          <svg class="uitk-icon-svg">
@@ -4618,10 +4618,74 @@
          </div>
       </section>
 
-<div id = "no-destination-content" display="none">
+
+<div id = "no-destination-content" class="uitk-grid all-x-gutter-12 desktop-col-1-3 tablet-col-1-3 smalltablet-col-1-2 flex-tile flex-theme-light flex-collapse ">
+<!--    <div id="ace-hotel" class="uitk-col ">
+      <div class="flex-card has-link">
+         <div class="flex-figure">
+            <figure class="image aspect-ratio16-9 loading" data-media-type="image" data-lazy="true" data-src="path/to/image.jpg" data-aspect-ratio="16-9" data-class="tile-media">
+               <noscript><img src="path/to/image.jpg" alt="" class="tile-media" /></noscript>
+               <span class="media-loader"><span class=" loader-primary loader-light loader-static loading" aria-hidden="true" title="Loading..."></span></span>
+            </figure>
+         </div>
+         <div class="message-flag flex-flag">Save Huge!</div>
+         <div class="flex-content">
+            <div class="flex-area-primary">
+               <h2 class="flex-title truncate">City Name</h2>
+               <p class="secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis leo.</p>
+            </div>
+            <div class="flex-area-secondary">
+               <p><span class="flex-price">Price</span></p>
+            </div>
+         </div>
+         <a class="flex-link" href="http:/">link info</a>
+         <div class="flex-area-tertiary"><button type="button" data-control="remove" data-target-id="ace-hotel" class="btn-primary btn-close module-close flex-close"><span class="icon icon-close" aria-hidden="true"></span><span class="alt">Close</span></button></div>
+      </div>
+   </div>
+   <div class="uitk-col ">
+      <div class="flex-card has-link">
+         <div class="flex-figure">
+            <figure class="image aspect-ratio16-9 loading" data-media-type="image" data-lazy="true" data-src="path/to/image.jpg" data-alt="link text" data-aspect-ratio="16-9" data-class="tile-media">
+               <noscript><img src="path/to/image.jpg" alt="link text" class="tile-media" /></noscript>
+               <span class="media-loader"><span class=" loader-primary loader-light loader-static loading" aria-hidden="true" title="Loading..."></span></span>
+            </figure>
+         </div>
+         <div class="flex-content">
+            <div class="flex-area-primary">
+               <h2 class="flex-title truncate">Title</h2>
+               <p class="secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis leo.</p>
+            </div>
+            <div class="flex-area-secondary">
+               <p><span class="flex-price">$350</span></p>
+            </div>
+         </div>
+         <a class="flex-link" href="http://">link info</a>
+      </div>
+   </div> -->
+<!--    <div class="uitk-col ">
+      <div class="flex-card has-link">
+         <div class="flex-figure">
+            <figure class="image aspect-ratio16-9 loading" data-media-type="image" data-lazy="true" data-src="path/to/image.jpg" data-alt="link text" data-aspect-ratio="16-9" data-class="tile-media">
+               <noscript><img src="path/to/image.jpg" alt="link text" class="tile-media" /></noscript>
+               <span class="media-loader"><span class=" loader-primary loader-light loader-static loading" aria-hidden="true" title="Loading..."></span></span>
+            </figure>
+         </div>
+         <div class="flex-content">
+            <div class="flex-area-primary">
+               <h2 class="flex-title truncate">Title</h2>
+               <p class="secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis leo.</p>
+            </div>
+            <div class="flex-area-secondary">
+               <p><span class="flex-price">$350</span></p>
+            </div>
+         </div>
+         <a class="flex-link" href="http://">link info</a>
+      </div>
+   </div> -->
+</div>
 
 <!-- Flex Card -->
-<div class="uitk-grid all-x-gutter-12 flex-listing flex-theme-light flex-image-alt ">
+<!-- <div class="uitk-grid all-x-gutter-12 flex-listing flex-theme-light flex-image-alt ">
    <div id="exampleId02d" class="uitk-col ">
       <div class="flex-card has-link">
          <div class="flex-figure">
@@ -4686,8 +4750,11 @@
          <div class="flex-area-tertiary"><button type="button" data-control="remove" data-target-id="exampleId04" class="btn-primary btn-close module-close flex-close"><span class="icon icon-close" aria-hidden="true"></span><span class="alt">Close</span></button></div>
       </div>
    </div>
+</div> -->
+<div id="json">
 </div>
-      </div>
+
+
 
 
       <script>
